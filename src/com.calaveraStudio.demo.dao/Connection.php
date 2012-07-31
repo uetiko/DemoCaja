@@ -1,10 +1,10 @@
 <?php
-include_once '../com.ife.chart.utils/JJLogger.php';
+include_once '../com.calaveraStudio.demo.utils/JJLogger.php';
 /**
  * Clase de conexion a postgres y mysql
  * @version 0.5.0
  * @author Angel Barrientos Cruz <uetiko@gmail.com>
- * @package com.ife.chart.dao
+ * @package com.calaveraStudio.demo.dao
  * @license http://www.gnu.org/copyleft/lesser.html Distributed under the Lesser General Public License (LGPL)
  * @copyright 2012
  */
