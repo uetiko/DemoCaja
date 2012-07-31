@@ -14,7 +14,7 @@ class PublicaDAO{
        $this->cnn = new Connection($this->conf->getUsuarioPostgres(), $this->conf->getPasswdPostgres(), $this->conf->getHostPostgres(), $this->conf->getPuertoPostgres(), $this->conf->getBasePostgres());
 	}
     
-    public function setNewPublicación(TOPublicacion $to){
+    public function setNewPublicacion(TOPublicacion $to){
         $this->cnn->openPersistentPgConnection();
         $insert = "insert into tbl_publicacion(tittulo, path, descripcion, activo,imagen) values({$to->getTitulo()}, ";
         $insert .= "'/web/img/publicaciones', {$to->getDescripcion()}, {$to->getPublicar()}, {$to->getImgName()}";
