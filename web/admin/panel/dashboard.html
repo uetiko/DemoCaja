@@ -4,7 +4,14 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="../../js/jquery/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery/jquery-cookie/jquery.cookie.js"></script>
 		<script type="text/javascript" src="../../js/lib/ajaxupload.3.5.js"></script>
+		<script type="text/javascript" src="../../js/dashboard/dashboard.js"></script>
+		<script type="text/javascript">
+            $(document).ready(function() {
+                initEvents();
+            });
+		</script>
 		<title>Dashbord pitero</title>
 	</head>
 	<body>
@@ -14,8 +21,8 @@
 				<tr>
 					<td>titulo</td>
 					<td>
-					<input type="text" id="titulo" name="titulo"/>
-					/></td>
+						<input type="text" id="titulo" name="titulo"/>
+					</td>
 				</tr>
 				<tr>
 					<td>descripcion</td>
@@ -31,12 +38,10 @@
 					</td>
 				</tr>
 			</table>
-			<div id="updateImg" class="updateImg">
-				<center>
-					<img src="../img/extjs/table_refresh.png" alt="upload" />
+			<div id="updateFile" class="updateFile">
+					<img src="../../img/png/1343425128_insert-image.png" alt="upload" />
 					<br/>
 					Carga de archivos
-				</center>
 			</div>
 			<div id="status" class="status"></div>
 			<button type="button" id="publica"> Publicar</button>
