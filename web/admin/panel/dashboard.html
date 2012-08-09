@@ -3,7 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<script type="text/javascript" src="../../js/jquery/jquery-1.7.2.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../js/jquery-ui/css/custom-theme/jquery-ui-1.8.22.custom.css" charset="utf-8"/>
+		<script type="text/javascript" src="../../js/jquery-ui/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui/js/jquery-ui-1.8.22.custom.min.js"></script>
 		<script type="text/javascript" src="../../js/jquery/jquery-cookie/jquery.cookie.js"></script>
 		<script type="text/javascript" src="../../js/lib/ajaxupload.3.5.js"></script>
 		<script type="text/javascript" src="../../js/dashboard/dashboard.js"></script>
@@ -16,35 +18,68 @@
 	</head>
 	<body>
 		<h1>Carga de publicidad</h1>
-		<div>
-			<table>
-				<tr>
-					<td>titulo</td>
-					<td>
-						<input type="text" id="titulo" name="titulo"/>
-					</td>
-				</tr>
-				<tr>
-					<td>descripcion</td>
-					<td>
-					<input type="text" id="desc" name="desc" />
-					</td>
-				</tr>
-				<tr>
-					<td> publicar?</td>
-					<td>
-						<input type="radio" name="publicar" value="true" />si<br/>
-						<input type="radio" name="publicar" value="false" />no
-					</td>
-				</tr>
-			</table>
-			<div id="updateFile" class="updateFile">
-					<img src="../../img/png/1343425128_insert-image.png" alt="upload" />
-					<br/>
-					Carga de archivos
+
+		<div id="tabs">
+			<ul>
+				<li>
+					<a href="#tabs-1">Carga de publicidad</a>
+				</li>
+				<li>
+					<a href="#tabs-2">Publicidad activa</a>
+				</li>
+				<li>
+					<a href="#tabs-3">Publicidad inactiva</a>
+				</li>
+			</ul>
+			<div id="tabs-1">
+				<div>
+					<table>
+						<tr>
+							<td>titulo</td>
+							<td>
+							<input type="text" id="titulo" name="titulo"/>
+							</td>
+						</tr>
+						<tr>
+							<td>descripcion</td>
+							<td>
+							<input type="text" id="desc" name="desc" />
+							</td>
+						</tr>
+						<tr>
+							<td> publicar?</td>
+							<td>
+							<input type="radio" name="publicar" value="true" />
+							si
+							<br/>
+							<input type="radio" name="publicar" value="false" />
+							no </td>
+						</tr>
+					</table>
+					<div id="updateFile" class="updateFile">
+						<img src="../../img/png/1343425128_insert-image.png" alt="upload" />
+						<br/>
+						Carga de archivos
+					</div>
+					<div id="status" class="status"></div>
+					<button type="button" id="publica">
+						Publicar
+					</button>
+				</div>
 			</div>
-			<div id="status" class="status"></div>
-			<button type="button" id="publica"> Publicar</button>
+			<div id="tabs-2">
+				<p>
+					Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.
+				</p>
+			</div>
+			<div id="tabs-3">
+				<p>
+					Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.
+				</p>
+				<p>
+					Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.
+				</p>
+			</div>
 		</div>
 
 	</body>

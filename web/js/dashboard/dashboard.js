@@ -3,7 +3,12 @@
  */
 
 function initEvents() {
+	makeEvents();
 	uploadFile();
+}
+
+function makeEvents(){
+		$( "#tabs" ).tabs();
 }
 
 function uploadFile(){
